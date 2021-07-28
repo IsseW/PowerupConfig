@@ -90,6 +90,12 @@
     <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="configs\NoCaps\Isse.PowerupConfig.cfg" />
+    <None Include="configs\OnlyLegendary\Isse.PowerupConfig.cfg" />
+    <None Include="configs\README.md" />
+    <None Include="configs\SomeCaps\Isse.PowerupConfig.cfg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\Muck\BepInEx\plugins" /q /s /y /i
