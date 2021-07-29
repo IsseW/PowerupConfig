@@ -91,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="configs\MyFavourite\Isse.PowerupConfig.cfg" />
     <None Include="configs\NoCaps\Isse.PowerupConfig.cfg" />
     <None Include="configs\OnlyLegendary\Isse.PowerupConfig.cfg" />
     <None Include="configs\README.md" />

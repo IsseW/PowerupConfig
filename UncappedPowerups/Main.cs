@@ -116,7 +116,7 @@ namespace PowerupConfig
             cfg.cdMax = Config.Bind(rHeader, name + "CDMax", cdMax, "Cumulative distribution max for item.");
 
             scalings.Add(name, cfg);
-            log.LogMessage("Added Scaling: " + name);
+            // log.LogMessage("Added Scaling: " + name);
         }
 
         static string Capitalize(string str)
@@ -173,7 +173,7 @@ namespace PowerupConfig
             }
             else
             {
-                log.LogMessage("Sending function: " + name);
+                // log.LogMessage("Sending function: " + name);
                 SendMessage("RegisterPowerUp", new Tuple<string, Func<int, bool, string>>(name, print));
             }
         }
