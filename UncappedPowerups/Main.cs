@@ -20,7 +20,7 @@ namespace PowerupConfig
             Name = "PowerupConfig",
             Author = "Isse",
             Guid = Author + "." + Name,
-            Version = "1.0.0.0";
+            Version = "1.0.0.1";
 
         public static Mod instance;
         public Harmony harmony;

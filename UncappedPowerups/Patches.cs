@@ -684,7 +684,7 @@ namespace PowerupConfig
                 packet.Write(fromClient);
                 packet.Write(objectID);
                 packet.Write(Mod.instance.PowerUpsPerPickup());
-                typeof(ServerSend).GetMethod("SendTCPDataToAll", BindingFlags.NonPublic | BindingFlags.Static).Invoke(null, new object[] { LocalClient.instance.myId, packet });
+                typeof(ServerSend).GetMethod("SendTCPDataToAll", BindingFlags.NonPublic | BindingFlags.Static, null, new System.Type[] { typeof(int), typeof(Packet) }, null).Invoke(null, new object[] { LocalClient.instance.myId, packet });
             }
             return false;
         }
