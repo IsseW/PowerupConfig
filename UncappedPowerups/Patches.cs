@@ -315,7 +315,7 @@ namespace PowerupConfig
             {
                 playerPowerups = ___powerups;
             }
-            int count = Count("Bulldozer", playerPowerups);
+            int count = Count("bulldozer", playerPowerups);
 
             __result = Mod.instance.ChanceMultiplier("bulldozerChance", "bulldozerPower", count, 0f);
 
